@@ -4,9 +4,11 @@
   "description": "Recieve & Send emails via SMS - Twilio API",
   "main": "index.js",
   "scripts": {
-    "dev:server": "nodemon ./server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "netlify:dev": "netlify dev"
+     "dev:server": "nodemon ./server.js",
+     "dev:mail": "nodemon ./mail-client.js",
+     "dev": "yarn dev:server & yarn dev:mail",
+     "test": "echo \"Error: no test specified\" && exit 1",
+     "netlify:dev": "netlify dev"
   },
   "keywords": [
     "sms",
